@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+.container {
+  background-color: #fff;
+  padding: 40px 30px; 
+  border-radius: 12px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px; 
+  box-sizing: border-box;
+  text-align: center;
+  margin: 20px;
+}
+
+.signup-container {
+  max-width: 500px; 
+  padding: 40px 50px; 
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, button {
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s ease;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 5px rgba(106, 17, 203, 0.3);
+}
+
+button {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.reset-btn {
+  background: #f44336; 
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.reset-btn:hover {
+  background: #d32f2f; 
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+p button {
+  background: none;
+  color: #6a11cb;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+}
+
+p button:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 20px;
+    max-width: 90%; 
+  }
+
+  .signup-container {
+    max-width: 90%;
+    padding: 30px 20px; 
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  input, select, button {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+    max-width: 90%; 
+  }
+
+  .signup-container {
+    max-width: 100%;
+    padding: 20px 15px; 
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  input, select, button {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 8px;
+  }
+}

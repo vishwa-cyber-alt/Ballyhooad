@@ -1,0 +1,29 @@
+.seats-container {
+    display: grid;
+    grid-template-columns: repeat(5, 70px);
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+  }
+  
+  .seat {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 2px solid #2196f3;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .seat:hover {
+    background-color: #e3f2fd;
+  }
+  
+  .seat.selected {
+    background-color: #2196f3;
+    color: white;
+    box-shadow: 0 0 8px #2196f3;
+  }

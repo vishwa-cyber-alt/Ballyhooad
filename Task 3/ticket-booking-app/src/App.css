@@ -1,0 +1,50 @@
+.app {
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 30px;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.result-container {
+  margin-top: 30px;
+}
+
+.seat-badge {
+  background-color: #4caf50;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.number-label {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.number-box {
+  background-color: #e3f2fd;
+  border: 1px solid #90caf9;
+  padding: 10px 0;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.number-box:hover {
+  background-color: #bbdefb;
+}
